@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Checkbox: <input type="checkbox" id="myCheck" onclick="myFunction()">
+
+<p id="text" style="display:none">Checkbox is CHECKED!</p> -->
+
+<input type="checkbox" id="myCheck" onclick="myFunction()">
+<label for="mycheck"> Pay using Credit Card / Debit Card / Net Banking (Ccavenuepay)</label>
+<div id="text">
+    <ul>
+        <li>You will be redirected to CCAvenue website when you place an order.</li>
+    </ul>
+    <input type="checkbox"id="check" name=check >
+    <label for ="check">My billing and shipping address are the same</label>
+    <button id="proceed_btn"; style="width:25%; background-color: green;color: white">PROCEED</button>
+</div>
+
+</body>
+</html>
+<script>
+
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+
+myFunction()
+
+</script>
